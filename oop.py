@@ -33,13 +33,14 @@ X, y = spiral_data(samples = 5, classes = 3)
 ########
 
 d1 = Dense_Layer(2,3)
-d2 = Dense_Layer(3,3)
-d3 = Dense_Layer(3,2)
 af = Actication_function()
 d1.forward(X)
-af_relu = af.relu(d1.output)
-print(af.output)
-af_sigmoid = af.sigmoid(d1.output)
-print(af.output)
-af_softmax = af.softmax(d1.output)
-print(af.output)
+af.relu(d1.output)
+af_relu = af.output
+print(af_relu)
+af.sigmoid(d1.output)
+af_sigmoid = af.output
+print(af_sigmoid)
+af.softmax(d1.output)
+af_softmax = af.output
+print(af_softmax)
